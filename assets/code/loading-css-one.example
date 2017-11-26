@@ -1,0 +1,18 @@
+// add npm packages
+yarn add css-loader style-loader --dev
+
+// add webpack config
+{
+  test: /\.css$/,
+  // "css" loader resolves paths in CSS and adds assets as dependencies.
+  // "style" loader turns CSS into JS modules that inject <style> tags
+  loader: ['style-loader', 'css-loader'],
+},
+
+// import index.css into your component
+
+import './index.css'
+
+const App = () => {
+  return <div>Hello World</div>
+}

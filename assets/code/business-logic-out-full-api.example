@@ -1,0 +1,18 @@
+const addTransaction = newTransactionData => (prevState, props) => {
+  // calculate newState return { data }
+}
+
+const latestTransactionBalance = transactionsData => {
+  return ...
+}
+
+const calculateNewBalance = ({ oldBalance, amount, type }) =>
+  ...
+
+const getTransactionsAndBalance = (transactionsData, { currentBalance }) => (
+  prevState,
+  props
+) => { // calculate newState return { data: newState } }
+
+export const hasMinimumBalance = (balance, expenditure) =>
+  balance - expenditure > 0

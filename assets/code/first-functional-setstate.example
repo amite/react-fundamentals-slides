@@ -1,0 +1,20 @@
+class App {
+  // ...
+  state = {
+    balance: App.DEFAULT_BALANCE_AMOUNT
+  }
+
+  addDeposit = () => {
+    this.setState((prevState) => {
+      return {
+        balance : {
+          ...prevState.balance,
+          prevState.balance + App.DEFAULT_BALANCE_AMOUNT
+        }
+      }
+    })
+  }
+  //..
+}
+
+// https://medium.freecodecamp.org/functional-setstate-is-the-future-of-react-374f30401b6b

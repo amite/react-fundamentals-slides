@@ -1,0 +1,9 @@
+// use a normal image tag without imports
+
+<img src="http://lorempixel.com/400/200/" alt="sample image" />
+
+// use a background
+
+body {
+  background: url('http://lorempixel.com/400/200/') no-repeat;
+}

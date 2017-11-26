@@ -1,0 +1,7 @@
+import Api from './api
+
+// inside your component's event handler
+deposit = () => {
+  this.setState(Api.deposit(3000))
+}
+

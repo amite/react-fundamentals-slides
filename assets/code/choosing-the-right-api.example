@@ -1,0 +1,8 @@
+
+<Button type="danger" onClick={this.deposit} label="Add Deposit" />
+
+// vs
+
+<Button type="danger" onClick={this.deposit}>
+  Add Deposit
+</Button>

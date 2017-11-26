@@ -1,0 +1,7 @@
+import store from './store'
+
+store.dispatch({ 
+  type: ADD_DEPOSIT, 
+  amount: 3000, 
+  note: 'salary' 
+})

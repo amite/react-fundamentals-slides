@@ -1,0 +1,11 @@
+ async componentDidMount() {   
+    this.setState(UI.startLoading())
+    try {
+      const { data } = await HTTP.loadTransactions()
+      this.setState(...)
+    } catch (error) {
+      // fire notification - data not loaded
+      // setState - set a flag to show try again ui
+    }
+    this.setState(UI.stopLoading())
+ }

@@ -1,0 +1,9 @@
+// angular routes
+
+const appRoutes: Routes = [
+  { path: 'about', component: AboutComponent },
+  {
+    path: 'favorites',
+    component: FavoritesComponent,
+  }
+];

@@ -1,0 +1,12 @@
+const Note = ({ text, handleNoteChange }) => {
+  return (
+    <div>
+      <textarea
+        ...
+        name="note"
+        value={text}
+        onChange={handleNoteChange}
+      />
+    </div>
+  )
+}

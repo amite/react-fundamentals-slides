@@ -1,0 +1,12 @@
+// inside app component
+addDeposit = () => {
+  this.setState((prevState) => {
+    return {
+      balance : {
+        ...prevState.balance,
+        // this is the business logic that needs to move out
+        prevState.balance + App.DEFAULT_BALANCE_AMOUNT
+      }
+    }
+  })
+}

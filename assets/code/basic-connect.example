@@ -1,0 +1,13 @@
+import { connect } from 'react-redux'
+
+const Status = ({ currentBalance }) => (
+  <p className="status">Current Balance: {currentBalance}</p>
+)
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    currentBalance: state.transactions.currentBalance.DEFAULT_BALANCE
+  }
+}
+
+export default connect(mapStateToProps)(Status)

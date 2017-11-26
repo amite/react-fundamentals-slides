@@ -1,0 +1,9 @@
+export const addDeposit = (amount, currentBalance) => {
+  return {
+    type: types.ADD_DEPOSIT,
+    amount,
+    note: faker.lorem.words(3),
+    date: moment(),
+    balance: currentBalance
+  }
+}

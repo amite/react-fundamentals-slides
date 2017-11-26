@@ -1,0 +1,23 @@
+
+// create a theme
+const buttonTheme = { green: 'rgba(47, 196, 93, 0.94)', red: 'rgba(222, 28, 19, 0.94)' }
+
+// create a react component that handles state and props etc
+const UnStyledButton = props => <button {...props} />
+
+// generate the glamorous component out of existing components using a factory function
+const Button = glamorous(UnStyledButton)(
+  {
+    borderRadius: '2px',
+    ...
+  },
+  ({ theme }) => ({
+    backgroundColor: theme === 'green' ? buttonTheme.green : buttonTheme.red,
+    marginRight: theme === 'green' ? '10%' : '0'
+  })
+)
+
+// use the glamorous component
+
+<Button theme="green">Add Deposit</Button>
+<Button theme="red">Add Expense</Button>

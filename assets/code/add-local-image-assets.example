@@ -1,0 +1,20 @@
+// add npm package
+yarn add file-loader --dev
+
+// add webpack config
+{ 
+  test: /\.(png|svg|jpg|gif)$/,
+  use: ['file-loader']
+}
+
+// import static asset as module
+import LoremPixel from './img/lorempixel.jpg'
+
+// use it in your React component
+<img src={LoremPixel} alt="" />
+
+// in css
+body {
+  background: url('../img/lorempixel.jpg');
+}
+

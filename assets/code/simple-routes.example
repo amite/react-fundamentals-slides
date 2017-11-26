@@ -1,0 +1,6 @@
+<Router>
+  <div>
+    <Route exact path="/" component={HomePage} />
+    <Route path="/dashboard" component={Dashboard} />
+  </div>
+</Router>

@@ -1,0 +1,13 @@
+const configureStore = () => {
+  const store = createStore(
+    reducer,
+    composeWithDevTools(applyMiddleware(loggerMiddleware))
+  )
+  return store
+}
+
+export default configureStore
+
+// Now you can create store outside
+
+const store = configureStore()

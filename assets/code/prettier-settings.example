@@ -1,0 +1,6 @@
+ "prettier": {
+    "printWidth": 80,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true
+  },

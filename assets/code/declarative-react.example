@@ -1,0 +1,17 @@
+class Button extends React.Component{
+  this.state = { color: 'red' }
+  
+  handleChange = () => {
+    const color = this.state.color === 'red' ? 'blue' : 'red'
+    this.setState({ color })
+  }
+  
+  render() {
+    return (<div>
+      <button 
+         className=`btn ${this.state.color}`
+         onClick={this.handleChange}>
+      </button>
+    </div>)
+  }
+}

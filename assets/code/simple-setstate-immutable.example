@@ -1,0 +1,18 @@
+class App {
+  // ...
+  state = {
+    balance: App.DEFAULT_BALANCE_AMOUNT
+  }
+
+  addDeposit = () => {
+    this.setState({ 
+      balance: {
+        ...this.state.balance,
+        this.state.balance + App.DEFAULT_DEPOSIT_AMOUNT 
+      }
+    })
+  }
+
+  // ..
+
+}

@@ -1,0 +1,10 @@
+import axios from 'axios'
+
+const APIEndpoint = process.env.NODE_ENV !== 'production' 
+    ?  `http://localhost:3004` : `http://realServer`
+
+const TransactionsEndpoint = `${APIEndpoint}/transactions`
+
+const loadTransactions = () => {
+  return axios.get(TransactionsEndpoint) // return a promise
+}

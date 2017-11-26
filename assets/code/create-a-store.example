@@ -1,0 +1,2 @@
+// reducer is a function that returns state
+const store = createStore(reducer)

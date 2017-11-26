@@ -1,0 +1,6 @@
+handleNoteChange = evt => {
+  evt.preventDefault()
+  this.setState({
+    form: { ...this.state.form, note: evt.target.value }
+  })
+}

@@ -1,0 +1,14 @@
+// before
+this.state = {
+  balance: ''
+}
+
+// after
+this.state = {
+  balance: 
+  note: '',
+  deposit: '',
+  spend: '',
+  isValid: '',
+  // even more state 😳
+}

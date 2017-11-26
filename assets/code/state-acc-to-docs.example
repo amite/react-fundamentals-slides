@@ -1,0 +1,17 @@
+class App extends Component {
+  constructor() {
+    this.state = {
+      someState: 'originalState'
+    }
+  
+  }
+
+  // later inside someEventHandling or render method access it as
+  handleEvent() {
+    // So something with that original state
+    this.state.someState
+  }
+  
+}
+
+

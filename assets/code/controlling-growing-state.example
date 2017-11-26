@@ -1,0 +1,20 @@
+// before
+this.state = {
+  balance: ''
+}
+
+// after
+state = {
+  data: {
+    balance: App.DEFAULT_BALANCE_AMOUNT,
+  },
+  form: {
+    note: '',
+    deposit: App.DEFAULT_DEPOSIT_AMOUNT,
+    spend: App.DEFAULT_EXPENSE_AMOUNT
+  }
+  ui: {
+    isActive: false,
+    message: ''
+  }
+}

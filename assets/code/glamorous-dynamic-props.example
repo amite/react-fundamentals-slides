@@ -1,0 +1,14 @@
+const Wrapper = glamorous.div(
+  // styles get merged
+  ({ size }) => ({ width: size === 'small' ? '80%' : '90%' }),
+  {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    height: '100%',
+    '@media(min-width: 40em)': {
+      width: '40%'
+    }
+  }
+)
+
+<Wrapper size="small" />

@@ -1,0 +1,19 @@
+// call site inside component
+deposit = () => {
+  this.setState(Api.deposit(App.DEFAULT_DEPOSIT_AMOUNT))
+}
+
+// curried function that returns the function 
+// that returns the object that contains the updated state
+//  React updates your state by passing it a fresh copy of the updated state
+const Api.deposit = depositAmount => (prevState, props) => {
+  const data = {
+    ...prevState.data,
+    balance: prevState.data.balance + depositAmount
+  }
+
+  return { data }
+}
+
+// https://medium.freecodecamp.org/functional-setstate-is-the-future-of-react-374f30401b6b
+// https://codepen.io/amite/pen/QqwWVZ?editors=0010 - Bad Counter/Good Counter Example

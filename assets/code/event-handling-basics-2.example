@@ -1,0 +1,15 @@
+
+class App extends Component {
+  // ... state here above etc
+
+  someMethod() {
+    console.log('called')
+  }
+
+  render() {
+    //  doesn't work - needs binding to this
+    <Button onClick={this.someMethod}>
+      Change it FTW!
+    </Button>
+  }
+}

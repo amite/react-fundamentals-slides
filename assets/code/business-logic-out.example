@@ -1,0 +1,9 @@
+// curried function that returns a function
+Api.deposit = (amount) => (prevState) => {
+    return {
+      balance : {
+        ...prevState.balance,
+        prevState.balance + amount
+      }
+    }
+}

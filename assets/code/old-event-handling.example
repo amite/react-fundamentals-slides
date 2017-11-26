@@ -1,0 +1,15 @@
+// Old ways to do event binding (deprecated)
+
+class App extends Component {
+  someMethod() {
+    console.log('called')
+  }
+
+  render() {
+    <Button onClick={this.someMethod.bind(this)}>
+      Change it FTW!
+    </Button>
+  }
+}
+
+// BAD: this creates a new function on every render

@@ -1,0 +1,24 @@
+import glamorous from 'glamorous'
+
+const buttonTheme = {
+  green: 'rgba(47, 196, 93, 0.94)',
+  red: 'rgba(222, 28, 19, 0.94)'
+}
+
+const UnStyledButton = props => <button {...props} />
+
+const Button = glamorous(UnStyledButton)(
+  {
+    borderRadius: '2px',
+    border: 'none',
+    ...
+  },
+  ({ theme }) => ({
+    backgroundColor: theme === 'green' ? buttonTheme.green : buttonTheme.red,
+    marginRight: theme === 'green' ? '10%' : '0'
+  })
+)
+
+Button.displayName = 'Button'
+
+export default Button

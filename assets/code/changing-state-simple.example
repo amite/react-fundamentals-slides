@@ -1,0 +1,11 @@
+// inside an eventHander inside a component (es6 class)
+
+class App extends Component {
+  this.state = {
+    oldState: 'originalState'
+  }
+  
+  someMethod() {
+    this.setState({ oldState: this.state.oldState + newState })
+  }
+}

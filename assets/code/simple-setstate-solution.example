@@ -1,0 +1,18 @@
+class App {
+    // use named constants - avoid magic numbers
+  static DEFAULT_DEPOSIT_AMOUNT = 3000
+  static DEFAULT_BALANCE_AMOUNT = 2000
+
+  state = {
+    balance: App.DEFAULT_BALANCE_AMOUNT
+  }
+
+  addDeposit = () => {
+    this.setState({ balance: this.state.balance + App.DEFAULT_DEPOSIT_AMOUNT })
+  }
+
+  render() {
+    return <Button onClick={this.addDeposit} />
+  }
+
+}

@@ -1,0 +1,15 @@
+class App extends Component {
+
+  // Arrow function class property -> Use Arrow function as method 
+  someMethod = () => {
+    console.log('called')
+  }
+
+  render() {
+    <Button onClick={this.someMethod}>
+      Change it FTW!
+    </Button>
+  }
+}
+
+// https://medium.com/@machnicki/handle-events-in-react-with-arrow-functions-ede88184bbb

@@ -1,0 +1,14 @@
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Paper>
+          <Header />
+          <Status />
+          <Button className="deposit">Add Deposit</Button>
+          <Button className="withdraw">Add Expense</Button>
+        </Paper>
+      </div>
+    )
+  }
+}

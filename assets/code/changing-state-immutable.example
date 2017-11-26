@@ -1,0 +1,11 @@
+// immmutable version one
+
+class App extends Component {
+  this.state = {
+    oldState: 'originalState'
+  }
+  
+  someMethod {
+    this.setState({ oldState: this.state.oldState + newState })
+  }
+}

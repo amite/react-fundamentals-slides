@@ -1,0 +1,18 @@
+
+class App extends Component {
+  constructor() {
+    this.someMethod = this.someMethod.bind(this)
+  }
+  
+  someMethod() {
+    console.log('called')
+  }
+
+  render() {
+    <Button onClick={this.someMethod}>
+      Change it FTW!
+    </Button>
+  }
+}
+
+// Good: constructor is only called once, not on every render

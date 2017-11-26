@@ -1,0 +1,11 @@
+const Note = ({ text }) => {
+  return (
+    <div>
+      <textarea
+        name="note"
+        placeholder="Please add a note"
+        value={text}
+      />
+    </div>
+  )
+}

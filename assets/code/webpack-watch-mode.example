@@ -1,0 +1,5 @@
+// add this to the scripts section of your package.json
+
+{
+  "start": "webpack -w"
+}

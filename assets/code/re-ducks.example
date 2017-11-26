@@ -1,0 +1,10 @@
+src
+├── state
+│  |-- ducks
+|     -- domain_one
+      -- domain_two
+|-- views
+|  |-- containers
+|  |-- components
+|
+

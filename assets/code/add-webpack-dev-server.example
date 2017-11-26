@@ -1,0 +1,18 @@
+// move index.html to dist folder
+root -> dist/index.html
+
+// add  webpack-dev-server via npm
+yarn add webpack-dev-server --dev
+
+
+// add config to webpack.config.js
+devServer: {
+  contentBase: './dist',
+},
+
+
+// modify script to start your new webpack server
+{
+  "start": "webpack-dev-server --open"
+}
+

@@ -1,0 +1,15 @@
+// add via npm
+yarn add html-webpack-plugin --dev
+
+// require it
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+// move index.html to templates folder
+
+// add to webpack config
+plugins: [
+  new HtmlWebpackPlugin({
+    template: `${__dirname}/public/assets/templates/index.html`,
+    hash: true,
+  }),
+],

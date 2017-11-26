@@ -1,0 +1,11 @@
+const Layout = () => (
+  <div className="primary-layout">
+    <header>Our React Router 4 App</header>
+    <nav>
+      {/* Menu goes here */}
+    </nav>
+    <main>
+      {/* Content goes here */}
+    </main>
+  </div>
+)

@@ -1,0 +1,24 @@
+import PlaylistHeader from "../components/atoms/playlist-header";
+
+describe("Playlist Header", function() {
+  ...
+
+  it("renders the input field", function() {
+    const input = playlistHeader.find(".stream-toggle");
+    expect(input).to.exist;
+    expect(input.prop("id")).to.contain("stream-toggle");
+    expect(input.prop("name")).to.equal("stream-toggle");
+    expect(input.prop("type")).to.equal("checkbox");
+  });
+
+  it("renders the label field", function() {
+    const label = playlistHeader.find("label");
+    expect(label).to.exist;
+    expect(label.prop("htmlFor")).to.contain("stream-toggle");
+    expect(label.find(".logo")).to.exist;
+    expect(label.find("h2")).to.exist;
+    expect(label.find(".menu-arrow")).to.exist;
+    expect(label.find(".type")).to.exist;
+  });
+
+});

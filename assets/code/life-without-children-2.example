@@ -1,0 +1,11 @@
+<Panel 
+  title="Browse for movies" 
+  body={
+    <div>
+      <div>Movie stuff...</div>
+      <div>Movie stuff...</div>
+      <div>Movie stuff...</div>
+      <div>Movie stuff...</div>
+    </div>
+  } 
+/>

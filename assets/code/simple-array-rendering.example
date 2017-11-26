@@ -1,0 +1,16 @@
+
+const names = ['vipul', 'praful', 'sunil']
+const people = [
+  {
+    name: 'vipul',
+    age: 23,
+    designation: 'sr. developer'
+  },
+  {
+    name: 'praful',
+    age: 25,
+    designation: 'team lead'
+  }
+]
+
+// Use https://codesandbox.io

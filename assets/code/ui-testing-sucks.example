@@ -1,0 +1,17 @@
+import { shallow } from "enzyme";
+import ActionButton from "../components/atoms/action-button";
+
+describe("ActionButton", () => {
+  let actionButton;
+
+  beforeEach( () =>  {
+    actionButton = shallow(<ActionButton classList="button" actionType="trash" />);
+  });
+
+  it("renders with all properties passed", () => {
+    expect(actionButton).to.have.tagName("button");
+    expect(actionButton).to.have.className("button");
+    expect(actionButton).to.have.descendants("i");
+    expect(actionButton).to.have.descendants(".fa");
+    expect(actionButton).to.have.descendants(".fa-trash-o");
+  });

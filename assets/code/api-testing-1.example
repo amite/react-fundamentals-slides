@@ -1,0 +1,17 @@
+import { calculateNewBalance } from 'api'
+
+it('should calculate the correct balance given a transaction', () => {
+  let transaction1 = {
+    amount: 2000,
+    oldBalance: 8000,
+    type: DEPOSIT
+  }
+  expect(calculateNewBalance(transaction1)).toBe(10000)
+
+  let transaction2 = {
+    amount: 2000,
+    oldBalance: 8000,
+    type: 'spend'
+  }
+  expect(calculateNewBalance(transaction2)).toBe(6000)
+})

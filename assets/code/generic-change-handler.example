@@ -1,0 +1,6 @@
+  handleChange = evt => {
+    evt.preventDefault()
+    this.setState({
+      data: { ...this.state.data, [evt.target.name]: evt.target.value }
+    })
+  }
