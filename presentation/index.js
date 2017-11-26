@@ -710,6 +710,104 @@ export default class Presentation extends React.Component {
             ..the longest part of your day job
           </Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            There are two kinds of Form components
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Controlled</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Uncontrolled</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            What's the difference?
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Controlled forms are attached to state</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Uncontrolled forms are unattached to state</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Uncontrolled forms are controlled by the user</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Controlled forms are controlled by you</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Uncontrolled Form Example
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/uncontrolled-form.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Controlled Form Example
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/controlled-form.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Problem: Why your controls don't update
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            ...when you bind them to state
+          </Text>
+          <List>
+            <Appear>
+              <ListItem>There is no 2-way binding in React</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>State is read-only by default</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Solution: Use onChange handlers
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/note-component-with-change-handler.example")}
+          />
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/onChange-note.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Generic Change Handler
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/generic-change-handler.example")}
+          />
+        </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
