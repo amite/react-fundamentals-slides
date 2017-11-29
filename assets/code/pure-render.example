@@ -1,0 +1,9 @@
+function render() {
+  // render function never accessed anything but `props` and `state`
+  return (
+    <div>
+      <h1>{this.props.title}</h1>
+      <input value={this.state.value} />
+    </div>
+  );
+}
