@@ -1103,7 +1103,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={2} fit textColor="tertiary" caps>
-            Module Twelve React Router 4
+            React Router 4
           </Heading>
           <Text margin="10px 0 0" textColor="secondary" size={6}>
             A new mental model for Routing
@@ -1189,6 +1189,42 @@ export default class Presentation extends React.Component {
             textSize={20}
             lang="js"
             source={require("raw-loader!../assets/code/basic-layout.example")}
+          />
+        </Slide>
+        <Slide
+          bgImage={images.opener.replace("/", "")}
+          bgDarken={0.45}
+          transition={["zoom"]}
+          bgColor="primary"
+        >
+          <Image
+            src={images.reactLogo.replace("/", "")}
+            margin="0px auto 20px"
+            height="128px"
+          />
+
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            React Best Practices
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            to keep your components sane and simple
+          </Text>
+          <Text margin="10px 0 0" textColor="primary" size={5} fit bold>
+            https://github.com/chrisui/sane-react
+          </Text>
+          <Text margin="10px 0 0" textColor="primary" size={5} fit bold>
+            https://medium.com/@justintulk/react-anti-patterns-props-in-initial-state-28687846cc2e
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={2} fit textColor="tertiary" caps>
+            Pure Render
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/pure-render.example")}
           />
         </Slide>
       </Deck>
