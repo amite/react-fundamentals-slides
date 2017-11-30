@@ -100,6 +100,26 @@ export default class Presentation extends React.Component {
             React Fundamentals
           </Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+          <Heading size={1} textColor="tertiary" margin="0px auto 40px" caps>
+            Who am I?
+          </Heading>
+          <Image
+            src="https://d26dzxoao6i3hh.cloudfront.net/items/3A0z2O300u0N430I0u3a/me.jpg?v=24b85e66"
+            margin="0px auto 40px"
+            height="350px"
+          />
+
+          <Heading size={3} textColor="quartenary">
+            Amit Erandole
+          </Heading>
+          <Heading size={4} textColor="primary" fit>
+            Writer, Designer and Full Stack Developer
+          </Heading>
+          <Heading size={4} textColor="quartenary" fit caps>
+            React / Redux Trainer and Consultant | @amit_tushar
+          </Heading>
+        </Slide>
         <Slide
           bgImage={images.waiting.replace("/", "")}
           bgDarken={0.4}
@@ -292,7 +312,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Image
             src="https://media.giphy.com/media/xlTwaFb20TVjW/giphy.gif"
-            height="550px"
+            height="600px"
           />
 
           <Heading margin="0 0 40px 0" size={1} fit textColor="tertiary" caps>
@@ -711,6 +731,43 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tomato">
+            Why Forms are Hard
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Multiple (Complex) Values</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Co-dependent state</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Field Validation</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Tracking Changes across multiple forms</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Handling Errors</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Async Errors</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Nested State</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Submitting state</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>touched / pristine</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Spaghetti Code</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             There are two kinds of Form components
           </Heading>
@@ -759,7 +816,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <CodePane
             margin="10px 0 0"
-            textSize={20}
+            textSize={18}
             lang="js"
             source={require("raw-loader!../assets/code/controlled-form.example")}
           />

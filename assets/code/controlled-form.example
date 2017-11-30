@@ -8,10 +8,15 @@ class Form extends Component {
     // do something with `name`
   }
 
+  handleInputChange = ({ value }) => {
+    // keep updating state here as user types
+    this.setState({ name: value })
+  }
+
   render() {
     return (
       <div>
-        <input type="text" value={this.state.name} />
+        <input onChange={this.handleInputChange} type="text" value={this.state.name} />
         <button onClick={this.handleSubmitClick}>Sign up</button>
       </div>
     );
