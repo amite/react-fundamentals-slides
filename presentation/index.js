@@ -1216,6 +1216,47 @@ export default class Presentation extends React.Component {
             https://medium.com/@justintulk/react-anti-patterns-props-in-initial-state-28687846cc2e
           </Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Writing resilient software
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Change without breaking</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Easy to add features</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Easy to remove features</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Easy to switch features</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Writing reusable components
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Can be combined in unexpected ways</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Solve new problems</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Offer a stateless api</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Use props over state</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Keep render pure</ListItem>
+            </Appear>
+          </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={2} fit textColor="tertiary" caps>
             Pure Render
@@ -1227,6 +1268,234 @@ export default class Presentation extends React.Component {
             source={require("raw-loader!../assets/code/pure-render.example")}
           />
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={2} fit textColor="tertiary" caps>
+            Higher Order Components
+          </Heading>
+          <Text margin="10px 0 0" textColor="secondary" size={1}>
+            a higher-order component is a function that takes a component and
+            returns a new component
+          </Text>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/pure-render.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={2} fit textColor="tertiary" caps>
+            What can an HOC do for me?
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Code reuse</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Logic Abstraction</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Render hijacking</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>State abstraction and manipulation</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Props manipulation</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            More on Simple setState - it takes a callback
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/simple-setstate-callback.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Let's upgrade to Functional Immutable setState
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/first-functional-setstate.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Lets Recap
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Which one should I use?
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Redux
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Are you ready to Time Travel?
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Redux in a Nutshell
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            State + Action = NewState
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Redux - Why Bother? (The Advantages)
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Predictable - Single Source of Truth</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Robust - Single Direction Data Flow</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Maintainable - Architecture that scales</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Fantastic Ecosystem and Community</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Easy to test</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Killer Dev Tools</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Redux - Such a Bother! (The Cons)
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Not easy to learn</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Odd mental model for OOP programmers</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Generates a lot of boilerplate</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Not component based</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Action at a distance</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Redux - the building blocks
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Store - where your state lives</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Actions - used to fire events</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Reducers - actually change state</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Notice something missing?
+          </Heading>
+          <Appear>
+            <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+              No opinions about UI
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Demo Time
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Redux without React
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            First you create a store
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/create-a-store.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Why is it called...
+          </Heading>
+          <Heading size={3} fit caps lineHeight={1} textColor="secondary">
+            a reducer?
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Next you configure the store (optional but recommended)
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/configure-a-store.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Next you add your actions
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/redux-action.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Then you fire your actions
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/redux-dispatch.example")}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            ...And watch your state change
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/redux-getstate.example")}
+          />
+        </Slide>
+        
       </Deck>
     );
   }
